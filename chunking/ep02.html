@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelson English 啟動英語腦</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/netizen-nelson/web-dev/bp-styles.css">
+    <style>
+        :root {
+            font-size: 22px;
+            --bg:       #0c0d0c;
+            --base:     #333333;
+            --shell:    #c6c7bd;
+            --lavender: #C3A5E5;
+            --special:  #C8DD5A;
+            --warning:  #F08080;
+            --salmon:   #E5C3B3;
+            --attention:#E5E5A6;
+            --sky:      #04b5a3;
+            --safe:     #81E6D9;
+            --yellow:   #faf03c:
+            --info:     #90CDF4;
+            --pink:     #FFB3D9;
+            --stone:    #7090A8;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', 'Open Sans', sans-serif;
+            background-color: var(--bg);
+            color: var(--shell);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+		.en {
+			font-family: 'Inter', sans-serif;
+			font-weight: 500;
+			letter-spacing: 1.1px;
+		}
+        .lesson-wrap {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 28px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<div class="lesson-wrap">
+    <div class="lesson-body">
+        <div class="my-3 en bp-text-info">
+			There is a widespread concern that AI will worsen people’s ability to think creatively and form meaningful relationships with others despite its promise to liberate humans from mundane labor.
+        </div>
+
+		<info-region-group start-color="yellow" progress-color="yellow" global-progress start-label="開始分析">
+			<info-region id="ir1" color="yellow" next="ir2" manual manual-label="下一步" border-width="0">
+				<div class="row p-2">
+					<div class="col">
+						<small>第一句：主詞、動詞</small><br>
+						<span class="en">concern, is</span><br>
+						<div class="fs-xsmall">這是There be + S倒裝句，表示S存在的概念</div>
+					</div>
+					<div class="col-8">
+						<small>that引導的名詞子句當主詞的同位語，邏輯上表示主詞所包含的概念</small><br>
+						<span class="en">AI, worsen, ability</span><br>
+						<div class="fs-xsmall">that子句的主詞、動詞、受詞</div>
+					</div>
+				</div>
+			</info-region>
+			<info-region id="ir2" color="yellow" manual manual-label="下一步" border-width="0" next="ir3">
+				<div class="p-2">
+					<small>不定詞片語</small><br>
+					<span class="en">to think creatively and form meaningful relationships with others</span><br>
+					<div class="fs-xsmall">當形容詞、後位修飾名詞ability</div>
+				</div>
+			</info-region>
+			<info-region id="ir3" color="yellow" manual manual-label="下一步" border-width="0" next="ir4">
+				<div class="p-2">
+					<small>介系詞片語</small><br>
+					<span class="en">despite its promise to liberate humans from mundane labor</span>
+					<div class="fs-xsmall">當副詞、修飾前句、表示讓步</div>
+				</div>
+			</info-region>
+			<info-region id="ir4" color="yellow" border-width="0">
+				<div class="p-2">
+					<small>不定詞片語</small><br>
+					<span class="en">to liberate humans from mundane labor</span>
+					<div class="fs-xsmall">當形容詞、後位修飾名詞promise</div>
+				</div>
+			</info-region>
+		</info-region-group>
+    </div>
+
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/netizen-nelson/web-dev/bp-tools-base.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/netizen-nelson/web-dev/bp-tools-up.js"></script>
+</body>
+</html>
